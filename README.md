@@ -14,6 +14,8 @@ The architecture of the database is built upon the following core business requi
 **Modelling**: Developed a Logical Entity-Relationship Diagram (ERD) using Crow's Foot notation.
 **Normalisation:** The schema is designed to Third Normal Form (3NF) to eliminate data redundancy and prevent update/insertion anomalies.
 **RDBMS:** Implemented and tested using PostgreSQL (pgAdmin 4).
+Entity-Relationship Diagram (ERD)
+![Nexus Asset Management ERD](./ERD.png)
 
 **Key Features:**
 **Composite Primary Keys**: Utilised in the Holding and Permitted_Asset tables to manage Many-to-Many (M:N) relationships.
