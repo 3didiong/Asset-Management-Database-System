@@ -21,6 +21,6 @@ The architecture of the database is built upon the following core business requi
 
 **📂 Repository Contents**
 /docs: Contains the formal business rules and the final ERD image.
-/scripts/schema.sql: The DDL script used to generate the tables, primary keys, and constraints.
-/scripts/seed.sql: Sample data to populate the environment for testing.
-/scripts/queries.sql: Analytical queries for performance reporting and compliance checking.
+/schema.sql: The DDL script used to generate the tables, primary keys, and constraints.
+/seed.sql: Sample data to populate the environment for testing.
+/queries.sql: Analytical queries for performance reporting and compliance checking.
