@@ -5,14 +5,28 @@ This project involves the conceptualisation, logic design, and implementation of
 The architecture of the database is built upon the following core business requirements:
 
 **Client Management**: A centralised repository for individual and institutional clients.
+
+
 **Account-Portfolio Linkage:** A strict 1:1 relationship where each investment account maps to exactly one managed portfolio.
+
+
 **Investment Mandates:** Implementation of governance rules that define the constraints and permitted assets for each portfolio.
+
+
 **Transaction Tracking:** Recording every trade (Buy/Sell) with full referential integrity to both the portfolio and the specific asset.
+
+
 **Holding Management:** A dynamic tracking system for asset positions using composite primary keys to ensure data uniqueness and integrity.
 
 **🛠️ Technical Implementation**
+
+
 **Modelling**: Developed a Logical Entity-Relationship Diagram (ERD) using Crow's Foot notation.
+
+
 **Normalisation:** The schema is designed to Third Normal Form (3NF) to eliminate data redundancy and prevent update/insertion anomalies.
+
+
 **RDBMS:** Implemented and tested using PostgreSQL (pgAdmin 4).
 Entity-Relationship Diagram (ERD)
 ![Nexus Asset Management ERD](./docs/ERD.png)
@@ -21,6 +35,8 @@ Entity-Relationship Diagram (ERD)
 
 
 **Composite Primary Keys**: Utilised in the Holding and Permitted_Asset tables to manage Many-to-Many (M:N) relationships.
+
+
 **Referential Integrity:** Robust use of Foreign Keys to ensure that transactions and holdings are always tied to valid portfolios and assets.
 
 **📂 Repository Contents**
