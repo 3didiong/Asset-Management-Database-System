@@ -15,15 +15,25 @@ The architecture of the database is built upon the following core business requi
 **Normalisation:** The schema is designed to Third Normal Form (3NF) to eliminate data redundancy and prevent update/insertion anomalies.
 **RDBMS:** Implemented and tested using PostgreSQL (pgAdmin 4).
 Entity-Relationship Diagram (ERD)
-![Nexus Asset Management ERD](./ERD.png)
+![Nexus Asset Management ERD](./docs/ERD.png)
 
 **Key Features:**
+
+
 **Composite Primary Keys**: Utilised in the Holding and Permitted_Asset tables to manage Many-to-Many (M:N) relationships.
 **Referential Integrity:** Robust use of Foreign Keys to ensure that transactions and holdings are always tied to valid portfolios and assets.
 
 **📂 Repository Contents**
+
+
 **/docs:** Contains the formal business rules and the final ERD image.
+
+
 **/scripts/schema.sql:** The DDL script used to generate the tables, primary keys, and constraints.
+
+
 **/scripts/seed.sql:** Sample data to populate the environment for testing.
+
+
 **/scripts/queries.sql:** Analytical queries for performance reporting and compliance checking.
 
